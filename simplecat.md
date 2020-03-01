@@ -243,6 +243,18 @@ $ php scat.php helloworld.txt
 Hello world!
 ```
 
+
+## Ruby (version 2.x)
+
+``` ruby
+open(ARGV[0], 'r').each_char { | c |$stdout << c }
+```
+
+``` shell
+$ ruby scat.rb helloworld.txt
+Hello world!
+```
+
 ### Submit a PR to add your implementation.
 
 Rules of engagement:
@@ -259,3 +271,4 @@ Rules of engagement:
 - [Mikhail Masyagin](https://github.com/masyagin1998) - Scheme (GNU Guile)
 - [eesmith](https://news.ycombinator.com/item?id=22455324) - Python with iter()'s sentinel
 - [Lawrence Lagerlof](https://github.com/llagerlof) - PHP
+- [Hermes Passer](https://github.com/HermesPasser) - Ruby
