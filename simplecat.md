@@ -177,6 +177,22 @@ Hello world!
 EOF: There will be no more data.
 ```
 
+## Scheme (GNU Guile)
+
+``` scheme
+(import (rnrs))
+(define (cat_file path)
+ (call-with-input-file path
+   (lambda (input-port)
+     (let loop ((x (read-char input-port)))
+	   (when (not (eof-object? x)) (begin (display x) (loop (read-char input-port))))))))
+(cat_file (car (cdr (command-line))))
+```
+
+``` shell
+$ guile --no-auto-compile cat.scm helloworld.txt
+Hello world!
+```
 
 Submit a PR to add your implementation.
 
