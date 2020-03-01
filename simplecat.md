@@ -8,7 +8,7 @@ Rules of engagement:
 
 1. Limit input to one [text file](helloworld.txt) in ASCII
 2. Read one character (one byte) at a time until EOF
-   - If your language explicitely supports a way to check for the EOF condition, use that instead of an iterator/text scanner/etc.
+   - If your language explicitely supports a way to check for the EOF condition, use it
 3. Print each character to the standard output
 4. Error checks can be omitted to simplify the implementation
 5. Make sure your code works :)
@@ -171,7 +171,7 @@ readable.on('end', () => {
 ```
 
 ``` shell
-$ node mcat.js helloworld.txt
+$ node scat.js helloworld.txt
 Hello world!
 
 EOF: There will be no more data.
@@ -184,7 +184,7 @@ Rules of engagement:
 
 1. Limit input to one [text file](helloworld.txt) in ASCII
 2. Read one character (one byte) at a time until EOF
-   - If your language explicitely supports a way to check for the EOF condition, use that instead of an iterator/text scanner/etc.
+   - If your language explicitely supports a way to check for the EOF condition, use it
 3. Print each character to the standard output
 4. Error checks can be omitted to simplify the implementation
 5. Make sure your code works :)
