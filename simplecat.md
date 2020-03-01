@@ -194,7 +194,7 @@ $ guile --no-auto-compile cat.scm helloworld.txt
 Hello world!
 ```
 
-Submit a PR to add your implementation.
+### Submit a PR to add your implementation.
 
 Rules of engagement:
 
@@ -204,3 +204,7 @@ Rules of engagement:
 3. Print each character to the standard output
 4. Error checks can be omitted to simplify the implementation
 5. Make sure your code works :)
+
+
+## Contributors
+- [Mikhail Masyagin](https://github.com/masyagin1998) - Scheme (GNU Guile)
