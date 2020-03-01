@@ -258,3 +258,4 @@ Rules of engagement:
 ## Contributors
 - [Mikhail Masyagin](https://github.com/masyagin1998) - Scheme (GNU Guile)
 - [eesmith](https://news.ycombinator.com/item?id=22455324) - Python with iter()'s sentinel
+- [Lawrence Lagerlof](https://github.com/llagerlof) - PHP
