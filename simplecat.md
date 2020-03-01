@@ -108,6 +108,21 @@ $ python3.8 scat.py helloworld.txt
 Hello world!
 ```
 
+## Python (using iter()'s form with an explicit sentinel)
+
+``` python
+import sys
+
+with open(sys.argv[1]) as fin:
+    for c in iter((lambda: fin.read(1)), ''):
+        sys.stdout.write(c)
+```
+
+``` shell
+$ python scat.py helloworld.txt
+Hello world!
+```
+
 ## Go
 
 ``` go
@@ -208,3 +223,4 @@ Rules of engagement:
 
 ## Contributors
 - [Mikhail Masyagin](https://github.com/masyagin1998) - Scheme (GNU Guile)
+- [eesmith](https://news.ycombinator.com/item?id=22455324) - Python with iter()'s sentinel
