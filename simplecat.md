@@ -230,6 +230,19 @@ $ guile --no-auto-compile cat.scm helloworld.txt
 Hello world!
 ```
 
+## PHP
+
+``` php
+<?php
+$handle = fopen($argv[1], "r");
+while ($c = fgetc($handle)) echo $c;
+```
+
+``` shell
+$ php scat.php helloworld.txt
+Hello world!
+```
+
 ### Submit a PR to add your implementation.
 
 Rules of engagement:
