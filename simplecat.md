@@ -45,7 +45,7 @@ $ ./scat helloworld.txt
 Hello world!
 ```
 
-## C version using systems calls (Unix I/O routines)
+## C version using system calls (Unix I/O routines)
 
 ```C
 #include <sys/types.h>
@@ -116,6 +116,27 @@ import sys
 with open(sys.argv[1]) as fin:
     for c in iter((lambda: fin.read(1)), ''):
         sys.stdout.write(c)
+```
+
+``` shell
+$ python scat.py helloworld.txt
+Hello world!
+```
+
+## Python version using system calls (Unix I/O routines)
+
+``` python
+import sys
+import os
+
+fd = os.open(sys.argv[1], os.O_RDONLY)
+
+while True:
+    c = os.read(fd, 1)
+    if not c:  # EOF
+        break
+    os.write(sys.stdout.fileno(), c)
+
 ```
 
 ``` shell
