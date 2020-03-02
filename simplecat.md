@@ -243,6 +243,20 @@ $ php scat.php helloworld.txt
 Hello world!
 ```
 
+## PHP (explicit test for EOF)
+
+``` php
+<?php
+$handle = fopen($argv[1], "r");
+while (!feof($handle)) {
+    echo fgetc($handle);
+}
+```
+
+``` shell
+$ php scat.php helloworld.txt
+Hello world!
+```
 
 ## Ruby (version 2.x)
 
