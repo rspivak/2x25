@@ -251,6 +251,7 @@ $handle = fopen($argv[1], "r");
 while (!feof($handle)) {
     echo fgetc($handle);
 }
+fclose($handle);
 ```
 
 ``` shell
